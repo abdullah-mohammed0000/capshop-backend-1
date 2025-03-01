@@ -3,7 +3,7 @@
 // // const bcrypt = require("bcryptjs");
 // // const jwt = require("jsonwebtoken");
 // // const cors = require("cors");
-// // const stripe = require("stripe")("sk_test_51Qlb4KELRrh4kP62yPoxFQYxG6ujJDlSylJYwCXdrcwvPmJ1qC7eMmwKG8XId5obHsSM7bTaCeFgFAELaat1MvgO00uKPuGp8Z"); // Replace with your Stripe Secret Key
+// // const stripe = require("stripe")(""); // Replace with your Stripe Secret Key
 // // const User = require("./models/User");
 
 // // const app = express();
@@ -12,7 +12,7 @@
 // // app.use(express.static("public")); // To serve static files
 
 // // // ✅ **Connect to MongoDB Atlas** (Replace with your MongoDB URI)
-// // mongoose.connect("mongodb+srv://am22abdullahmohammed:ABDullah2405@cluster0.wket6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+// // mongoose.connect("", {
 // //     useNewUrlParser: true,
 // //     useUnifiedTopology: true,
 // // })
@@ -142,7 +142,7 @@
 // app.use(express.static("public")); // To serve static files
 
 // // ✅ **Connect to MongoDB Atlas** (Replace with your MongoDB URI)
-// mongoose.connect("mongodb+srv://am22abdullahmohammed:ABDullah2405@cluster0.wket6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+// mongoose.connect("", {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true,
 // })
@@ -263,7 +263,7 @@
 // const bcrypt = require("bcryptjs");
 // const jwt = require("jsonwebtoken");
 // const cors = require("cors");
-// const stripe = require("stripe")("sk_test_51Qlb4KELRrh4kP62yPoxFQYxG6ujJDlSylJYwCXdrcwvPmJ1qC7eMmwKG8XId5obHsSM7bTaCeFgFAELaat1MvgO00uKPuGp8Z"); // Replace with your Stripe Secret Key
+// const stripe = require("stripe")(""); // Replace with your Stripe Secret Key
 // const User = require("./models/User");
 
 // const app = express();
@@ -272,7 +272,7 @@
 // app.use(express.static("public")); // To serve static files
 
 // // ✅ **Connect to MongoDB Atlas** (Replace with your MongoDB URI)
-// mongoose.connect("mongodb+srv://am22abdullahmohammed:ABDullah2405@cluster0.wket6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+// mongoose.connect("", {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true,
 // })
@@ -395,7 +395,7 @@
 // const bcrypt = require("bcryptjs");
 // const jwt = require("jsonwebtoken");
 // const cors = require("cors");
-// const stripe = require("stripe")("sk_test_51Qlb4KELRrh4kP62yPoxFQYxG6ujJDlSylJYwCXdrcwvPmJ1qC7eMmwKG8XId5obHsSM7bTaCeFgFAELaat1MvgO00uKPuGp8Z"); // Replace with your Stripe Secret Key
+// const stripe = require("stripe")(""); // Replace with your Stripe Secret Key
 // const User = require("./models/User");
 
 // const app = express();
@@ -404,7 +404,7 @@
 // app.use(express.static("public")); // To serve static files
 
 // // ✅ **Connect to MongoDB Atlas** (Replace with your MongoDB URI)
-// mongoose.connect("mongodb+srv://am22abdullahmohammed:ABDullah2405@cluster0.wket6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+// mongoose.connect("", {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true,
 // })
@@ -506,7 +506,7 @@
 // const bcrypt = require("bcryptjs");
 // const jwt = require("jsonwebtoken");
 // const cors = require("cors");
-// const stripe = require("stripe")("sk_test_51Qlb4KELRrh4kP62yPoxFQYxG6ujJDlSylJYwCXdrcwvPmJ1qC7eMmwKG8XId5obHsSM7bTaCeFgFAELaat1MvgO00uKPuGp8Z"); // Replace with your Stripe Secret Key
+// const stripe = require("stripe")(""); // Replace with your Stripe Secret Key
 // const User = require("./models/User");
 
 // const app = express();
@@ -515,7 +515,7 @@
 // app.use(express.static("public")); // To serve static files
 
 // // ✅ **Connect to MongoDB Atlas** (Replace with your MongoDB URI)
-// mongoose.connect("mongodb+srv://am22abdullahmohammed:ABDullah2405@cluster0.wket6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+// mongoose.connect("", {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true,
 // })
@@ -643,7 +643,7 @@
 // const bcrypt = require("bcryptjs");
 // const jwt = require("jsonwebtoken");
 // const cors = require("cors");
-// const stripe = require("stripe")("sk_test_51Qlb4KELRrh4kP62yPoxFQYxG6ujJDlSylJYwCXdrcwvPmJ1qC7eMmwKG8XId5obHsSM7bTaCeFgFAELaat1MvgO00uKPuGp8Z"); // Replace with your Stripe Secret Key
+// const stripe = require("stripe")(""); // Replace with your Stripe Secret Key
 // const User = require("./models/User");
 
 // const app = express();
@@ -652,7 +652,7 @@
 // app.use(express.static("public")); // To serve static files
 
 // // ✅ **Connect to MongoDB Atlas** (Replace with your MongoDB URI)
-// mongoose.connect("mongodb+srv://am22abdullahmohammed:ABDullah2405@cluster0.wket6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+// mongoose.connect("", {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true,
 // })
@@ -782,7 +782,7 @@
 // const bcrypt = require("bcryptjs");
 // const jwt = require("jsonwebtoken");
 // const cors = require("cors");
-// const stripe = require("stripe")("sk_test_51Qlb4KELRrh4kP62yPoxFQYxG6ujJDlSylJYwCXdrcwvPmJ1qC7eMmwKG8XId5obHsSM7bTaCeFgFAELaat1MvgO00uKPuGp8Z"); // Replace with your Stripe Secret Key
+// const stripe = require("stripe")(""); // Replace with your Stripe Secret Key
 // const User = require("./models/User");
 
 // const app = express();
@@ -791,7 +791,7 @@
 // app.use(express.static("public")); // To serve static files
 
 // // ✅ **Connect to MongoDB Atlas** (Replace with your MongoDB URI)
-// mongoose.connect("mongodb+srv://am22abdullahmohammed:ABDullah2405@cluster0.wket6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+// mongoose.connect("", {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true,
 // })
@@ -892,7 +892,7 @@
 // const bcrypt = require("bcryptjs");
 // const jwt = require("jsonwebtoken");
 // const cors = require("cors");
-// const stripe = require("stripe")("sk_test_51Qlb4KELRrh4kP62yPoxFQYxG6ujJDlSylJYwCXdrcwvPmJ1qC7eMmwKG8XId5obHsSM7bTaCeFgFAELaat1MvgO00uKPuGp8Z"); // Replace with your Stripe Secret Key
+// const stripe = require("stripe")(""); // Replace with your Stripe Secret Key
 // const User = require("./models/User");
 
 // const app = express();
@@ -901,7 +901,7 @@
 // app.use(express.static("public")); // To serve static files
 
 // // ✅ **Connect to MongoDB Atlas** (Replace with your MongoDB URI)
-// mongoose.connect("mongodb+srv://am22abdullahmohammed:ABDullah2405@cluster0.wket6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+// mongoose.connect("", {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true,
 // })
