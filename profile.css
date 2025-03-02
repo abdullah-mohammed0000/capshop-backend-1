@@ -1,0 +1,125 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Profile Container */
+.profile-container {
+    padding: 20px; /* Reduce padding if necessary */
+    margin: 20px auto; /* Center the container and reduce margin */
+    max-width: 700px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Header */
+.profile-header {
+    margin-bottom: 20px; /* Reduce margin */
+    text-align: center;
+}
+
+.profile-header h1 {
+    font-size: 2rem; /* Adjust font size if needed */
+    margin-bottom: 10px; /* Reduce margin */
+}
+
+.profile-header p {
+    font-size: 1rem;
+    color: #777;
+    margin: 0; /* Remove default margin */
+}
+
+/* Profile Info */
+.profile-info {
+    margin-top: 15px; /* Reduce margin */
+    font-size: 1rem;
+    color: #555;
+}
+
+.profile-info div {
+    margin: 10px 0; /* Reduce margin */
+}
+
+/* Logout Button */
+.profile-button {
+    margin-top: 20px; /* Reduce margin */
+    padding: 10px 20px; /* Adjust padding if needed */
+    background-color: rgb(28, 46, 59);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.profile-button:hover {
+    background-color: rgb(20, 35, 45);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .profile-container {
+        padding: 15px; /* Further reduce padding on smaller screens */
+        margin: 10px; /* Reduce margin on smaller screens */
+    }
+
+    .profile-header h1 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .profile-info {
+        font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+
+    .profile-button {
+        margin-top: 15px; /* Further reduce margin on smaller screens */
+        padding: 8px 16px; /* Adjust padding for mobile */
+    }
+}
+/* Responsive design for mobile devices */
+@media screen and (max-width: 600px) {
+    .profile-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .profile-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile-header p {
+        font-size: 1rem;
+    }
+
+    .profile-info {
+        font-size: 1rem;
+    }
+
+    .profile-button {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-container {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .profile-info div {
+        font-size: 0.9rem;
+    }
+    
+    .profile-button {
+        padding: 12px 20px;
+    }
+}

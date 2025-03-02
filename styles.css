@@ -1,0 +1,599 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(28,46,59);
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 19rem 1rem;
+    background-image: url("banner4.jpg"); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image in the section */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    color: black;
+}
+
+#welcome{
+    visibility: hidden;
+}
+
+#style{
+    visibility: hidden;
+}
+
+#shopnow{
+    visibility: hidden;
+}
+
+.hero button {
+    padding: 0.8rem 2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #555;
+}
+
+/* Products Section */
+#products {
+    padding: 2rem 1rem;
+    text-align: center; /* Center "Featured Products" heading */
+}
+
+#products h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Filters */
+.filters {
+    text-align: center; /* Center the filter buttons */
+    margin-bottom: 2rem;
+}
+
+#show-filters {
+    padding: 0.8rem 2rem; /* Dark button styling for "Filter" button */
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#show-filters:hover {
+    background-color: #555;
+}
+
+#filter-options button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#filter-options button:hover {
+    background-color: #ddd;
+}
+
+#filter-options button.active {
+    background-color: #333; /* Dark background for active filter */
+    color: white;
+    font-weight: bold;
+}
+
+/* Product Grid */
+.product-list {
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.product-card {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(28, 46, 59); /* Deep dark background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for urban look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover; /* Ensure image fits well within card */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+.product-card img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #fff;  /* White text to contrast with the dark background */
+    text-transform: uppercase; /* Bold, street-style capital letters */
+    letter-spacing: 1px; /* Spacing for an edgier feel */
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.product-card input {
+    width: 50px;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;  /* Darker input text */
+    font-weight: bold;
+}
+
+.confirm-purchase {
+    padding: 0.5rem 1rem;
+    background-color: #ff4e50;  /* Bright, bold red for the call-to-action */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase; /* Adds a bold and modern edge */
+    letter-spacing: 1px; /* Slight letter spacing for a more 'street' feel */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.confirm-purchase:hover {
+    background-color: #e43d3d;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.confirm-purchase:active {
+    transform: translateY(0); /* Reset the effect when clicked */
+}
+
+/* ✅ Ensure Modal is Fully Hidden Before JavaScript Loads */
+.modal {
+    display: none !important; 
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.4s ease-in-out;
+} 
+
+/* ✅ Make Modal Visible When JavaScript Shows It */
+.modal.show {
+    display: flex !important;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ✅ Modal Box (Beautiful UI) */
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-out; /* 🔥 Smooth slide-in */
+}
+
+/* ✅ Slide-in Animation */
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+
+/* ✅ Close Button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.close-button:hover {
+    color: red;
+}
+
+/* ✅ Stylish Cap Image on Top */
+.modal-content img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    animation: pop 0.5s ease-in-out;
+}
+
+/* ✅ Form Inputs */
+.modal-content input {
+    width: 90%; /* Ensure inputs take 90% width of modal content */
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+}
+
+.modal-content input:focus {
+    border: 2px solid #ff4e50;
+    outline: none;
+}
+
+/* ✅ Show/Hide Password Button */
+
+#showPassword {
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    font-size: 14px; /* Reduced font size */
+    padding: 0 5px; /* Reduced horizontal padding */
+    margin-left: 2px; /* Slightly reduced left margin */
+    opacity: 0.9; /* Optional: Slightly less prominent */
+}
+
+/* ✅ Password Input and Button Alignment */
+
+#showPassword:hover {
+    opacity: 1; /* Make it fully opaque on hover */
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* ✅ Login & Signup Buttons */
+.modal-content button {
+    background: linear-gradient(to right, #ff4e50, #f9d423);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+.modal-content button:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Toggle Link (Login <-> Signup) */
+#toggleAuth {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#toggleAuth a {
+    color: #ff4e50;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#toggleAuth a:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Error Message */
+.auth-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
+    display: none;
+}
+
+/* ✅ Loading Spinner */
+.loading-spinner {
+    display: none;
+    width: 25px;
+    height: 25px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: auto;
+}
+
+/* 🔥 Animations */
+@keyframes pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgb(28,46,59);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Adidas-like font */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-about, .footer-links, .footer-follow, .footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-about h3, .footer-links h3, .footer-follow h3, .footer-contact h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-about p, .footer-contact p {
+    font-size: 0.9rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff4e50; /* Hover color */
+}
+
+.footer-payments {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.payment-icon {
+    width: 50px;
+    height: auto;
+}
+
+/* Red color for email link */
+.email-link {
+    color: red;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    nav ul:last-child {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        padding: 10rem 1rem;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-about, .footer-links, .footer-follow, .footer-contact {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 6rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        padding: 1rem;
+    }
+
+    .filters button {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile-first approach for navigation */
+nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
