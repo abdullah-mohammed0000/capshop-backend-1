@@ -1032,7 +1032,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const cors = require("cors");
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY); // Replace with your Stripe Secret Key
+const stripe = require("stripe")("sk_test_51Qlb4KELRrh4kP62yPoxFQYxG6ujJDlSylJYwCXdrcwvPmJ1qC7eMmwKG8XId5obHsSM7bTaCeFgFAELaat1MvgO00uKPuGp8Z"); // Replace with your Stripe Secret Key process.env.STRIPE_SECRET_KEY
 const User = require("./models/User");
 
 const app = express();
